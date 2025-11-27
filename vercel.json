@@ -5,16 +5,5 @@
             "source": "/api/(.*)",
             "destination": "/prime_backend/prime_server.js"
         }
-    ],
-    "builds": [
-        {
-            "src": "prime_backend/prime_server.js",
-            "use": "@vercel/node"
-        },
-        {
-        "src": "prime_number_checker/package.json",
-        "use": "@vercel/static-build",
-        "config": {"distDir": "dist"}
-        }
     ]
 }
