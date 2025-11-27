@@ -57,6 +57,7 @@ app.get('/api/check_prime/:number', (req, res) => {
 module.exports = app;
 
 if (process.env.NODE_ENV !== 'production'){
+    const PORT = 3001;
     app.listen(PORT, () => {
         console.log(`Server running on http://localhost:${PORT}`);
     });

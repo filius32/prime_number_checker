@@ -4,7 +4,6 @@ const API_BASE_URL = import.meta.env.PROD
 
 
 export const checkPrime = async (number) => {
-    
     try{
         const response = await fetch(`${API_BASE_URL}/check_prime/${number}`);
         if(!response.ok){
