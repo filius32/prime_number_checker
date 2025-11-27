@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "/server/prime_server.js"
+        }
+    ],
+    "builds": [
+        {
+            "src": "server/prime_server.js",
+            "use": "@vercel/node"
+        },
+        {
+        "src": "prime_number_checker/package.json",
+        "use": "@vercel/static-build",
+        "config": {"distDir": "dist"}
+        }
+    ]
+}
