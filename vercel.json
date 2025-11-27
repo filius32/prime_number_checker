@@ -3,7 +3,7 @@
     "rewrites": [
         {
             "source": "/api/(.*)",
-            "destination": "/prime_backend/prime_server.js"
+            "destination": "prime_backend/prime_server.js"
         }
     ]
 }
