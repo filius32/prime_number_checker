@@ -2,7 +2,7 @@
     "version": 2,
     "rewrites": [
         {
-            "source": "/api/(.*)",
+            "source": "/prime_backend/(.*)",
             "destination": "/prime_backend/prime_server.js"
         }
     ]
