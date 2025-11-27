@@ -18,7 +18,7 @@ const isPrime = (num) => {
     return true;
 };
 
-app.get('/api/check_prime/:number', (req, res) => {
+app.get('/check_prime/:number', (req, res) => {
     const input = parseFloat(req.params.number);
 
     if(isNaN(input)){
