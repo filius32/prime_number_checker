@@ -1,7 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-const { default: App } = require('../prime_number_checker/src/App');
-// import app from '../prime_number_checker/src/App';
 const app = express();
 const PORT = 3001;
 const router = express.Router();
@@ -55,11 +53,6 @@ app.get('/api/check-prime/:number', (req, res) => {
         timestamp: new Date().toISOString(),
         message: result ? `${input} is a Prime Number!` : `${input} is NOT a Prime Number`
     });
-});
-
-app.use('/api', router);
-app.get('/', (req, res) => {
-    res.send('Backend is alive!');
 });
 
 
