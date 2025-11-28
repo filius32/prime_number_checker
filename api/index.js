@@ -65,7 +65,7 @@ app.get('/', (req, res) => {
 });
 
 
-module.exports = App;
+module.exports = app;
 
 if (process.env.NODE_ENV !== 'production'){
     const PORT = 3001;
