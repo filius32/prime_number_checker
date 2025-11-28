@@ -24,7 +24,7 @@ function App() {
       setResult(data);
     } catch (err){
       console.error("Full Error Details: ", err);
-      setError(err.message || "Something went wrong");
+      setError(err.message || "Something went ");
     } finally {
       setLoading(false);
     }
