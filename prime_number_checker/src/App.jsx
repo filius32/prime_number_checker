@@ -23,8 +23,8 @@ function App() {
       const data = await checkPrime(inputValue);
       setResult(data);
     } catch (err){
-      console.error(err);
-      setError(err.message);
+      console.error("Full Error Details: ", err);
+      setError(err.message || "Something went wrong");
     } finally {
       setLoading(false);
     }

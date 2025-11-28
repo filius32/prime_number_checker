@@ -21,7 +21,7 @@ router.get('/check-prime/:number', (req, res) => {
         return true;
     };
 
-    app.get('/check-prime/:number', (req, res) => {
+    app.get('/api/check-prime/:number', (req, res) => {
         const input = parseFloat(req.params.number);
 
         if(isNaN(input)){
