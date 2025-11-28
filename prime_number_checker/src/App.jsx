@@ -22,9 +22,9 @@ function App() {
     try{
       const data = await checkPrime(inputValue);
       setResult(data);
-    } catch (error){
-      console.error(error);
-      setError(error.message);
+    } catch (err){
+      console.error(err);
+      setError(err.message);
     } finally {
       setLoading(false);
     }
