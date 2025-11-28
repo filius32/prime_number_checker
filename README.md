@@ -9,7 +9,6 @@ This project implements a Sevice-Oriented Architecture.
 It seperates the user interface (primary_number_checker) from the business logic (api), ensuring scalability and maintainability.
 
 ### Key Features
-* **Optimized Algorithm:** Uses trial division up to square root of $n$ ($O(\sqrt{n})$
 * **Detailed Input Validation:**
     * Prevents  *Decimal* inputs (e.g: 4.5)
     * Handles *Negative* numbers
