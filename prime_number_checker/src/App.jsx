@@ -11,6 +11,7 @@ function App() {
   const handleCheck = async () => {
     setError('');
     setResult(null);
+    setLoading(true);
 
     if(!inputValue){
       setError('Please enter a number');
@@ -22,6 +23,7 @@ function App() {
       const data = await checkPrime(inputValue);
       setResult(data);
     } catch (error){
+      console.error(error);
       setError(error.message);
     } finally {
       setLoading(false);
