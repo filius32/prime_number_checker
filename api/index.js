@@ -1,7 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-// const { default: App } = require('../prime_number_checker/src/App');
-import app from '../prime_number_checker/src/App';
 const app = express();
 const PORT = 3001;
 const router = express.Router();
